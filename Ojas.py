@@ -1,3 +1,17 @@
+'''
+In this code, the linear distance will always be the sum of absolute differences between the values 
+of both letters at same index, whereas circular distance will be sum of minimum values of 
+linear distance, and circular distance.
+
+To calculate linear distance for index 'i' : absolute value ( value of letter in word1 at index i -  
+                                                              value of letter in word2 at index i)
+
+To calculate circular distance for index 'i' : minimum ( linear distance, 26 - max(value of letter in word1 at index i),
+                                                                                   value of letter in word2 at index i )
+
+'''
+
+#Author : Ojas Kund
 import sys
 
 file_name = sys.argv[-1]
